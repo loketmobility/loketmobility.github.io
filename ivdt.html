@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+li, button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+body{
+  font-family: sans-serif;
+}
+</style>
+</head>
+    <body>
+        
+        
+        <H1>
+            ProRail App Tester
+        </H1>
+        <p>
+        Met behulp van deze pagina kan je de verschillende ProRail apps testen met een server naar keuze.<br/>
+        Zorg dat de app is geïnstalleerd op het device waarmee je deze pagina bezoekt, en klik op de gewenste server.<br/>
+        De gekozen configuratie blijft permanent behouden, je hoeft dus niet steeds vanuit deze pagina de app te starten.<br />
+        Gebruik de knop 'Reset configuratie' om de app weer terug te brengen naar de oorspronkelijke staat.
+        </p>
+        <H2>
+            Inspecteur van de Toekomst
+        </H2>
+        IvdT / Inspectietool
+        <ul>
+            <li><button onclick=clickBtn("ivdt://setServer?server=reset")>Reset configuratie</button></li>
+            <li><button onclick=clickBtn("ivdt://setServer?server=scp-ms-acc.prorail.nl")>Acceptatie - DNS</button></li>
+        </ul>
+    </body>
+    
+    <script>
+        
+        function clickBtn(url)
+        {
+            window.open(url);
+        }
+    </script>
+</html>
